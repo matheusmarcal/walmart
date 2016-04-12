@@ -1,0 +1,26 @@
+O Projeto utiliza node.js como plataforma de execução.
+
+Node.js permite uma série de ferramentas que ajudam no desenvolvimento front-end,
+Tais como
+
+*bower
+- Gerenciador de Libs,
+
+*gulp
+- Automatiza a injeção de arquivos css,javascript, gera o arquivo javascript minificado,etc.
+
+*yeoman
+- Utilizado para criar a estrutura básica do projeto cujo a maioria dos projetos front-end angular usam...
+Possúi a possibilidade de escolha de outros projetos.
+
+*angular-js
+- Facilita a comunicação entre view e javascript (two way binding), além do angular possuir diversas libs já prontas que poupam o tempo do desenvolvedor.
+O Angular é um framework rico em utilidades, padrões de desenvolvimento, possúi integrações com frameworks de testes como jasmine,protractor,karma entre outros.
+
+
+Por questões de falta de tempo, foi considerado deixar o gerenciamento de rotas com a própria lib do angular, que permite que seja feito isso,
+Mas se o projeto não fosse um teste, seria considerado deixar gerênciamento de rotas com o backend (ASP.NET,JSP,DJANGO,etc).
+
+*angular-ui-bootstrap
+- Integração do framework bootstrap para o framework angular.js.
+
