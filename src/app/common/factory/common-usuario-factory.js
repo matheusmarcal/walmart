@@ -9,7 +9,7 @@
 
         var _command = {};
 
-        _source.usuarios = [];
+        _source.pedidos = [];
         _command.PopularUsuarios = function () {
             for (var x = 0; x <= 30; x++) {
                 var _usuario = {};
@@ -22,7 +22,7 @@
                 _usuario.DataNascimento = new Date();
                 _usuario.Nome = (_source.nomes[Math.floor((Math.random() * 4) + 1)]);
                 _usuario.Endereco = CommonEnderecoFactory.Obter(x);
-                _source.usuarios.push(_usuario);
+                _source.pedidos.push(_usuario);
             }
         };
         _command.PopularUsuarios();
@@ -32,19 +32,19 @@
         };
 
         _factory.Obter = function (ID) {
-            return angular.element.grep(_source.usuarios, function (_usuario) {
+            return angular.element.grep(_source.pedidos, function (_usuario) {
                 return _usuario.ID == ID;
             })[0];
         };
 
         _factory.ObterPorEndereco = function (ID) {
-            return angular.element.grep(_source.usuarios, function (_usuario) {
+            return angular.element.grep(_source.pedidos, function (_usuario) {
                 return _usuario.Endereco.ID == ID;
             })[0];
         };
 
         _factory.ObterTodos = function () {
-            return _source.usuarios;
+            return _source.pedidos;
         };
 
         return _factory;

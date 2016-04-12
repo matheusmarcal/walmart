@@ -2,7 +2,7 @@
     'use strict';
 
     /** @ngInject */
-    function CommonPedidoFactory(CommonEnderecoFactory, CommonUsuarioFactory) {
+    function CommonPedidoFactory(CommonEnderecoFactory, CommonUsuarioFactory, CommonProdutoFactory) {
 
         var _source = {};
         var _command = {};
@@ -15,11 +15,10 @@
                 _pedido.Endereco = CommonEnderecoFactory.Obter(x);
                 _pedido.Usuario = CommonUsuarioFactory.Obter(x);
                 _pedido.Itens = [];
-                for (var y = 0; y <= 30; y++) {
+                for (var y = 0; y <= (Math.floor((Math.random() * 4) + 1)); y++) {
                     var _item = {};
-                    _item.Nome = ('Item ' + Math.floor((Math.random() * x) + 1));
+                    _item.Produto = CommonProdutoFactory.Obter((Math.floor((Math.random() * 4) + 1)));
                     _item.Quantidade = (Math.floor((Math.random() * x) + 1))
-                    _item.Valor = ('Cidade ' + Math.floor((Math.random() * x) + 1));
                     _pedido.Itens.push(_item);
                 }
                 _source.pedidos.push(_pedido);

@@ -3,7 +3,8 @@
 
     angular.module('view',
         [
-            'view.usuario'
+            'view.usuario',
+            'view.pedido'
         ]
     );
 

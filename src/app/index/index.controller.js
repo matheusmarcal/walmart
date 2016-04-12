@@ -11,7 +11,7 @@
         var vm = this;
         vm.crud = {};
         vm.source = {};
-        vm.source.usuarios = CommonUsuarioFactory.ObterTodos();
+        vm.source.pedidos = CommonUsuarioFactory.ObterTodos();
 
     }
 })();

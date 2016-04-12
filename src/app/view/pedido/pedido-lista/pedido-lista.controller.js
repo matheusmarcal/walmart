@@ -2,12 +2,12 @@
     'use strict';
 
     /** @ngInject */
-    function UsuarioListaController(CommonUsuarioFactory, $state, $scope) {
+    function PedidoListaController(CommonPedidoFactory, $state, $scope) {
         var vm = this;
 
         vm.crud = {};
         vm.source = {};
-        vm.source.pedidos = CommonUsuarioFactory.ObterTodos();
+        vm.source.pedidos = CommonPedidoFactory.ObterTodos();
         vm.command = {};
         vm.paginacao = {};
         vm.command.IniciarPaginacao = function () {
@@ -66,7 +66,7 @@
 
     }
 
-    angular.module('usuario-lista.controller', [])
-        .controller('UsuarioListaController', UsuarioListaController);
+    angular.module('pedido-lista.controller', [])
+        .controller('PedidoListaController', PedidoListaController);
 
 })();

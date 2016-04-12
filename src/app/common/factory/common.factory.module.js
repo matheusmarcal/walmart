@@ -5,7 +5,8 @@
         [
             'common-endereco.factory',
             'common-pedido.factory',
-            'common-usuario.factory'
+            'common-usuario.factory',
+            'common-produto.factory'
         ]
     );
 
