@@ -10,6 +10,7 @@
             'ngSanitize',
             'ngMessages',
             'ngAria',
+            'ngMask',
 
             'restangular',
             'ui.router',

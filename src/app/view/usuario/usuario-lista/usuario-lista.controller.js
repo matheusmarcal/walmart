@@ -2,14 +2,13 @@
     'use strict';
 
     /** @ngInject */
-    function UsuarioListaController(CommonUsuarioFactory, $scope) {
+    function UsuarioListaController(CommonUsuarioFactory, $state, $scope) {
         var vm = this;
 
         vm.crud = {};
         vm.source = {};
         vm.source.usuarios = CommonUsuarioFactory.ObterTodos();
         vm.command = {};
-
         vm.paginacao = {};
         vm.command.IniciarPaginacao = function () {
 
@@ -60,6 +59,10 @@
             });
         }
         vm.command.IniciarPaginacao();
+
+        vm.command.UsuarioDetalhes = function (_usuario) {
+            $state.go('usuario.detalhe', {ID: _usuario.ID});
+        };
 
     }
 

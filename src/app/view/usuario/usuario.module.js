@@ -2,7 +2,7 @@
     'use strict';
 
     angular.module('view.usuario',
-        ['usuario-lista']
+        ['usuario-lista', 'usuario-detalhe']
     );
 
 })();

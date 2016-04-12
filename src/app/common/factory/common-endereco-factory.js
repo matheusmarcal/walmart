@@ -17,7 +17,8 @@
                         Rua: ('Rua ' + Math.floor((Math.random() * x) + 1)),
                         Bairro: ('Bairro ' + Math.floor((Math.random() * x) + 1)),
                         Cidade: ('Cidade ' + Math.floor((Math.random() * x) + 1)),
-                        Estado: ('Estado ' + Math.floor((Math.random() * x) + 1))
+                        Estado: ('Estado ' + Math.floor((Math.random() * x) + 1)),
+                        CEP : (''+x+''+x+''+x+''+x+''+x+''+x+''+x+''+x+''+x+''+''+x)
                     }
                 );
             }
