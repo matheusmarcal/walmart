@@ -18,7 +18,19 @@
                         Bairro: ('Bairro ' + Math.floor((Math.random() * x) + 1)),
                         Cidade: ('Cidade ' + Math.floor((Math.random() * x) + 1)),
                         Estado: ('Estado ' + Math.floor((Math.random() * x) + 1)),
-                        CEP : (''+x+''+x+''+x+''+x+''+x+''+x+''+x+''+x+''+x+''+''+x)
+                        CEP: ('' + x + '' + x + '' + x + '' + x + '' + x + '' + x + '' + x + '' + x + '' + x + '' + '' + x),
+                        Coordenadas: {
+                            lat: (
+                            Math.floor((Math.random() * 9) + 1) + '' +
+                            Math.floor((Math.random() * 9) + 1) + '.' +
+                            Math.floor((Math.random() * 9) + 1) + '' +
+                            Math.floor((Math.random() * 9) + 1)),
+                            lng: (
+                            Math.floor((Math.random() * 9) + 1) + '' +
+                            Math.floor((Math.random() * 9) + 1) + '.' +
+                            Math.floor((Math.random() * 9) + 1) + '' +
+                            Math.floor((Math.random() * 9) + 1))
+                        }
                     }
                 );
             }

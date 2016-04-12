@@ -19,7 +19,8 @@
     "angular": "~1.5.3",
     "jquery": "~2.1.4",
     "components-font-awesome": "^4.5.0",
-    "ngMask": "angular-mask#^3.0.16"
+    "ngMask": "angular-mask#^3.0.16",
+    "angular-leaflet-directive": "angular-leaflet#^0.10.0"
   },
   "devDependencies": {
     "angular-mocks": "~1.5.3"

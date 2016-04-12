@@ -12,6 +12,7 @@
             'ngAria',
             'ngMask',
 
+            'leaflet-directive',
             'restangular',
             'ui.router',
             'ui.bootstrap',
