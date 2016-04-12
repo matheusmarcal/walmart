@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    background-image: url('../images/background.jpg');
+    background-attachment: fixed;
+    background-size: 65% 90%;
+    background-position: 55% 30%;
+    background-repeat: no-repeat;
+    overflow-y: auto;
+}
+
+div[ui-view]{
+    background-color: rgba(255, 255, 255, 0.92);
+}
+
+div[ui-view] > .row{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
