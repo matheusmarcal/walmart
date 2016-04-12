@@ -74,7 +74,7 @@
                     osloMarker: {
                         lat: Number(vm.source.coordinates.lat),
                         lng: Number(vm.source.coordinates.lng),
-                        message: "I want to travel here!",
+                        message: "Destino",
                         focus: true,
                         draggable: true
                     }
@@ -95,7 +95,7 @@
                 osloMarker: {
                     lat: Number(vm.source.coordinates.lat),
                     lng: Number(vm.source.coordinates.lng),
-                    message: "I want to travel here!",
+                    message: "Destino",
                     focus: true,
                     draggable: true
                 }
